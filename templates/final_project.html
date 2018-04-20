@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+    <head>
+        <title>MagicMark</title>
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway:400,800">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script defer src="https://use.fontawesome.com/releases/v5.0.10/js/all.js" integrity="sha384-slN8GvtUJGnv6ca26v8EzVaR9DC58QEwsIk9q1QXdCU8Yu8ck/tL/5szYlBbqmS+" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="../static/css/bootstrap.css">
+        <link rel="stylesheet" href="../static/css/style2.css">
+        <link rel="stylesheet" href="../static/css/project2.css">
+        <link rel="stylesheet" href="../static/css/lightbox.css">
+    </head>
+
+    <body>
+        
+
+        <div class="container">
+            <nav class="navbar navbar-expand-lg fixed-top navbar-light bg-light">
+                <a class="navbar-brand" href="#" tabindex="1">MagicMark</a>
+
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item dropdown mr-5">
+                            <a id="Projects" class="nav-link dropdown-toggle"  id="navbarDropdown" data-toggle="dropdown"
+                            tabindex="2" >SORT BY</a>
+                                <div class="dropdown-menu">
+                                    <a class="dropdown-item" href="#" tabindex="3">Rating</a>
+                                    <a class="dropdown-item" href="#" tabindex="4">Review</a>
+                                    <a class="dropdown-item" href="#" tabindex="5">Name</a>
+                                </div>
+                        </li>
+                        
+                    </ul>
+                </div>
+            </nav>
+            </div>
+       
+            <div class="jumbotron">
+                <div class="container-fluid">
+                  <h4 class="display-3 col-12">Magic City</h4>
+                  <div class="sub_title col-12 ">
+                  <p> Get Around a City Like a Pro - Restaurants, Bars and So Much More
+                </div>
+                  </p>
+
+                  <form class="form_input" action="/" method="post">
+                    
+                        <input type="text" class="form-control col-10 col-md-5 mb-4" id="validationCustom03" placeholder="Search for a U.S City..." name="projectFilepath" value="Ann Arbor" required>
+                    
+                        <input type="text" class="form-control col-10 col-md-5 mb-4" id="validationCustom04"placeholder="Restaurants, Bars, Hotels..." name="term">
+                       
+                        <button class="btn btn-default col-4 col-md-2 mt-3" method="POST" type="submit">Go!</button>
+                 </form>
+                </div>
+            </div>
+                
+                
+
+    <div class="card-columns col-12 col-md-10 mx-auto">
+
+        <div class="card mx-2 my-3">
+            <div class="card-body">
+                 <small class="credit col-12 mb-4"> 
+                        Marko's Word of Wisdom<!--  - <cite title="Source Title">Credit to Mitsuku</cite> -->
+                        <i class="far fa-comments"></i>
+                  </small>
+                       
+                  <div class="my_text text_bubble mt-5">                        
+                        <p class="card-text ">
+                            <div class="buble pull-right" id="user"><p id="meme">Hi</p>
+                            </div>
+                        </p>
+                    </div> 
+
+                    <div class="your_text text_bubble col-11 mb-3" id="machine">  
+                        <p class="card-text marko ">
+                            <div class="mt-5 mb-2"> 
+                                <img class="me" src=/static/assets/logo.png alt="Image">
+                                <small>Marko</small> 
+                            </div>          
+                            <div class="buble"><p id="yoyo">Hi</p></div>
+                        </p>
+                    </div> 
+
+                  <!--   <div class="input col-12">
+                    <div class="row col-12">
+                    <input type="text" class="form-control mt-5 mb-3" id="myMessage" placeholder="Talk to me..." name="chatbot">
+                    <button class="btn btn-default" id="sendbutton">Send</button> -->
+
+                    <div class="input-group mt-5 mb-3">
+                      <input type="text" class="form-control" placeholder="Talk to me..."  id="myMessage" name="chatbot">
+                      <div class="input-group-append">
+                        <button class="btn btn-outline-secondary" type="button" id="sendbutton">SEND</button>
+                      </div>
+                    </div>
+<!-- 
+                    </div>
+                    </div> -->
+
+            </div>
+        </div>
+
+
+        <div class="card bg-primary text-white text-center p-3 mx-2 my-3">
+            <blockquote class="blockquote mb-0">
+                <p>There is nothing that good food can not cure</p>
+                <footer class="blockquote-footer">
+                    <small>
+                        Mark Huang <cite title="Source Title">Word of Wisdom</cite>
+                    </small>
+                </footer>
+            </blockquote>
+        </div> 
+
+
+        <div class="card mx-2 my-3">
+            <div class="card-body about_the_city">
+                <h5 class="card-title">About the City</h5>
+                <p class="card-text city_info">{{city_info[0]}} ......More</p>
+                <p class="card-text population">Population: {{city_info[1]}}</p>
+                <p class="card-text"><small class="bottom">Last updated 3 mins ago</small></p>
+            </div>
+        </div>
+
+        <div class="card bg-primary text-white text-center mx-2 my-3">
+             <div class="card-body">
+                <h5 class="card-title">Music Lounge</h5>
+                <a class="web_link" href="https://www.youtube.com/embed/tgbNymZ7vqY"> 
+                <iframe  class="youtube" src="https://www.youtube.com/embed/IxxstCcJlsc?controls=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>                      
+                </a>
+                <p class="card-text"><small class="bottom">Clarity by Zedd</small></p>
+            </div>
+         
+        </div>
+
+        
+     
+       {% for i in data %}    
+        <div class="card mx-2 my-3">
+            <a class="web_link" href={{i[4]}} target="_blank">              
+            <img class="card-img-top" src={{i[3]}} alt="Project6 Image">
+            <div class="card-body">
+                  <h5 class="card-title">{{i[0]}}</h5>
+                  <p class="card-text title_name">{{i[7]}}--{{i[6]}}</p>
+                  <p class="card-text location mt-4"><i class="fas fa-map-marker"></i> {{i[2]}}</p>
+                  <p class="card-text "><small class="bottom_text"><i class="far fa-star"></i> Rating: </small><small class="bottom_text_rating">{{i[1]}}</small><small class=" bottom_text col-6"><i class="fas fa-comment-dots"></i> Review: {{i[5]}}</small></p>
+            </div></a>
+         
+        </div>
+        {% endfor %}
+
+
+
+       
+        <div class="card mx-2 my-3">
+            <div class="card-body">
+                <h5 class="card-title">Thank You</h5>
+                <p class="card-text">Hope you are having fun using the app</p>
+                <p class="card-text"><small class="bottom">Mark Huang</small></p>
+            </div>
+        </div>
+
+        <div class="card mx-2 my-3">
+             <div class="card-body">
+                <h5 class="card-title">My Music</h5>
+                <a class="web_link" href="https://www.youtube.com/embed/tgbNymZ7vqY"> 
+               <iframe width="100%" height="150" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/257935666&color=white_orange%23ff5500&auto_play=false&hide_related=false&show_comments=false&show_user=false&show_reposts=false&show_teaser=true&visual=true"></iframe>                 
+                </a>
+                <p class="card-text"><small class="bottom">Title: Sweat</small></p>
+            </div>
+         
+        </div>
+
+
+           
+    
+    </div>
+
+    
+
+          <div class="w-screen mt-4">
+            <footer class="footer">           
+                <div class="row justify-content-center ">
+                  <a class="nav-link js-scroll-trigger " href="">MagicMark &copy; 2018</a>
+                </div>
+            </footer>
+          </div>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.4/TweenMax.min.js"></script>
+        <script src="../static/js/main.js"></script>
+<!--         <script>
+            
+            $(about_the_city).mouseenter(function(){
+
+            $(".city_info").hide()
+
+            $(".population").show()
+            $(".population").css("opacity",  1)
+
+           })
+
+            $(about_the_city).mouseleave(function(){
+
+            $(".city_info").show()
+
+            $(".population").hide()
+            $(".population").css("font-size", "40px")
+
+           })
+
+        </script> -->
+       
+    </body>
+</html>

@@ -1,0 +1,13 @@
+.jumbotron {
+  /*background-image: url("/assets/c3.jpg")*/
+  visibility: transparent; }
+
+.img-thumbnail {
+  border-radius: 1.2rem; }
+
+.container {
+  z-index: 1; }
+
+#Projects { 
+  color:grey!important;
+}
